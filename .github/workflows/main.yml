@@ -16,8 +16,8 @@ jobs:
 
     - name: Install Repo
       run: |
-        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-        chmod a+x ~/bin/repo
+        curl https://storage.googleapis.com/git-repo-downloads/repo -LO
+        chmod a+x repo
     - name: Clone Source
       run: |
         repo init -u https://android.googlesource.com/platform/manifest -b master --partial-clone
