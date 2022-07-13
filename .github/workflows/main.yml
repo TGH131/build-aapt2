@@ -20,7 +20,7 @@ jobs:
         chmod a+x repo
     - name: Clone Source
       run: |
-        repo init -u https://android.googlesource.com/platform/manifest -b master --partial-clone
-        repo sync -c
+        ./repo init -u https://android.googlesource.com/platform/manifest -b master --partial-clone
+        ./repo sync -c
       
     
